@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     user-select: none;
-
 }
 
 .cowboy:hover ~ .emoji {
@@ -123,7 +122,12 @@ a:hover + .hiddenmsg {
 
 .content {
     margin: 0 25% 0 20%;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat, sans-serif;    
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(100,100,100);
+    line-height: 1.65em;
+    letter-spacing: 1px;
 }
 
 .section {
@@ -139,12 +143,25 @@ h3 {
 }
 
 .section > p {
-    font-size: 12px;
-    font-weight: 300;
-    color: rgb(100,100,100);
-    line-height: 1.65em;
-    letter-spacing: 1px;
+    margin: 5% 0% 0% 10%;
+}
+
+.table {
     margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5em;
+    align-items: center;
+}
+
+.tableHead {
+    text-align: right;
+    width: 15%;
+}
+
+.tableContents {
+   padding-left: 2em;
+   width: 85%;
 }
 
 .fade {
