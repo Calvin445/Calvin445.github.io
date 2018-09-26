@@ -17,19 +17,28 @@ Reveal
 https://github.com/jlmakes/scrollreveal
 
 -->
+
 <div class="intro-container">
     <div class="intro">
         <div class="title">
             <h1 class="heading rB">Howdy! I'm <strong>Calvin Cai</strong>.</h1>
-
+             
             <h2 class="subtext rB"> 
                 Second-year student studying computer science and mathematics at 
                 <a class="fancy-link" href="https://www.ccis.northeastern.edu/">Northeastern University</a>. 
-                Alto Saxphonist with the <a class="fancy-link" href="https://camd.northeastern.edu/music/making-music/ensembles/wind/">
+                Alto Saxophonist with the <a class="fancy-link" href="https://camd.northeastern.edu/music/making-music/ensembles/wind/">
                 NEU Wind Ensemble</a>. Rock climber, weightlifter.<br> 
             </h2>
 
-            <h2 class="subtext rB">Bona-fide computer cowboy.</h2>
+            <h2 class="subtext cowboy rB"><a class="fancy-link cowboy">Bona-fide computer cowboy</a>.</h2>
+            <p class="emoji">🎷</p>
+            <p class="emoji">💻</p>
+            <p class="emoji">👨‍💻</p>
+            <p class="emoji">🏋️‍♂️</p>
+            <p class="emoji">☕</p>
+            <p class="emoji">👨‍🎓</p>
+            <p class="emoji">✍️</p>
+            <p class="emoji">🧗</p>
         </div>
 
         <!--contact info menu, round buttons, gmail, github, linkedin, instagram-->
@@ -46,7 +55,7 @@ https://github.com/jlmakes/scrollreveal
             <li><a href="https://www.instagram.com/calvi4455/?hl=en">
                     <img class="icon" src="images/instagram.png"></a>
                     <h6 class="hiddenmsg">Follow my Instagram</h6></li>
-        </ul>                            
+        </ul> 
     </div>
 </div>
 
@@ -54,66 +63,50 @@ https://github.com/jlmakes/scrollreveal
 
 <div class="content">
     <div class="section background">
-        <h3 class="rR">BACKGROUND 🙋‍♂️</h3>
+        <h3 class="rR">BACKGROUND</h3>
         <p class="rB">
-            As a student, I'm passionate about learning because it gives me the
-            tools to interact with the world in a meaningful way, whether that's
-            through building <a class="fancy-link" href="#projects">cool stuff</a>
-            or analyzing the ethical concerns of new technologies.
-            understanding how the pieces work together, be it through study or experimentation. As a progammer, it helps to
-            write clear, intelligent, and bug-free code.
+            As a student, I love learning because it allows me the
+            to interact with the world in a meaningful way, whether that's
+            through building <a class="fancy-link" href="#projects">cool
+            stuff</a> or analyzing the ethical concerns of new technologies.
             </br></br>
-            If I'm not coding, I'm probably picking an outfit, rocking out on the saxophone, working out at the gym,
-            or listening to classic rock.
+            I'm also a passionate problem solver that thrives in challenging work environments.
+            I chose computer science, so I could tackle tough problems and make an impact
+            on the world.
+            </br></br>
+            If I'm not coding, I'm probably rocking out on the saxophone, 
+            working out at the gym, rock climbing, or listening to 
+            <a href="https://open.spotify.com/user/1220252461?si=huYA2NJFTpiB_CuiVUSyTw"
+               class="fancy-link">music</a>. 
         </p>
 
     </div>
 
     <div class="section" id="coursework">
-        <h3 class="rR">COURSEWORK 👨‍🎓</h3>
-        <div class="school rB">
-            <h4>Northeastern University </h4>
-            <h4>September 2017 - Present</h4>
-        </div>
-        <ul class="rB">
-            <li><p>Fundamentals of Computer Science 1 and 2</p> <p class="grade">A</p></li>
-            <li><p>Discrete Structures</p><p class="grade">A</p></li>
-            <li><p>Logic and Computation</p><p class="grade">A</p></li>
-            <li><p>Algorithms and Data</p><p class="grade">A-</p></li>
-            <li><p>Linear Algebra</p><p class="grade">A</p></li>
-            <li><p>Calculus 3</p><p class="grade">A</p></li>
-            <li><p>Overall GPA</p><p class="grade">3.942</p></li>
-        </ul>
-
-        <div class="school rB">
-            <h4>Montgomery High School </h4>
-            <h4>September 2013 - June 2017</h4>
-        </div>
-        <ul class="rB">
-            <li><p>Overall GPA</p> <p class="grade">3.855</p></li>
-            <li><p>SAT</p><p class="grade">2300</p></li>
-        </ul>
+        <h3 class="rR">COURSEWORK</h3>
+        <p class="rB">Currently under construction. Check back later!
     </div>
 
 
     <div class="section" id="skills">
-        <h3 class="rR">SKILLS &#x270D</h3>
+        <h3 class="rR">SKILLS</h3>
         <p class="rB">Currently under construction. Check back later!
         </p>
     </div>
 
     <div class="section" id="projects">
-        <h3 class="rR">PROJECTS 👨‍💻</h3>
+        <h3 class="rR">PROJECTS</h3>
         <p class="rB">Currently under construction. Check back later!
         </p>
     </div>
 
     <div class="section" id="experience">
-        <h3 class="rR">EXPERIENCE 🤝</h3>
+        <h3 class="rR">EXPERIENCE</h3>
         <p class="rB">Currently under construction. Check back later!
         </p>
     </div>
 </div>
+
 
 
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
@@ -126,6 +119,37 @@ https://github.com/jlmakes/scrollreveal
     // Customizing a reveal set
     sr.reveal('.rB');
     sr.reveal('.rR', { origin: 'right'});
+
+
+    var emojis = document.querySelectorAll(".emoji");
+    var emoji;
+    for(var i = 0; i < emojis.length; i++) {
+        emoji = emojis[i];
+        moveElem(emoji, 2 * Math.random() * Math.PI, random(5) + 25, random(5) +
+        20, (random(10) + 30)/125000);
+    }
+
+    function random(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    function moveElem(element, ti, cx, cy, dt) {
+        var elem = element;
+        var bottom;
+        var left;
+        var theta = ti;
+        var id = setInterval(frame, 5);
+        function frame() {
+            bottom = (cy * Math.sin(3*theta)) + 50;
+            left = (cx * Math.cos(theta)) + 45;
+            elem.style.bottom = bottom+ '%';
+            elem.style.left = left + '%';
+            theta += dt;
+            if (theta > 2 * Math.PI) {
+                theta = 0;
+            }
+        }
+    }
 
 </script>
 
