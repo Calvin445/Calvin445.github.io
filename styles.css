@@ -164,42 +164,27 @@ h3 {
    width: 85%;
 }
 
-.fade {
-    opacity: 0.6;
-}
-
-.school {
+.project {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
 }
 
-h4 {
-    font-weight: 600;
-    font-size: 12px;
-    letter-spacing: 0em;
-    margin-bottom: 1.5em;
-    color: rgb(70,70,70);
-
+.project-image {
+    width: 60%;
+    height: 60%;
+    transition: 0.3s ease;
+    opacity: 0.75;
 }
 
-.background ul li{
-    font-size: 12px;
-    font-weight: 300;
-    color: rgb(100,100,100);
-    line-height: 1.65em;
-    letter-spacing: 1px;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
+.project-description {
+    width: 40%;
+    
 }
 
-.background ul li:last-of-type {
-    margin-bottom:10%;
+.project-description > strong {
+    font-size: 18px;
+    color: rgb(255, 188, 0);
 }
 
-.grade {
-    width: 6em;
-    margin-right:1em;
-}
+

@@ -136,8 +136,27 @@ https://github.com/jlmakes/scrollreveal
 
     <div class="section" id="projects">
         <h3 class="rR">PROJECTS</h3>
-        <p class="rB">Currently under construction. Check back later!
-        </p>
+        <div class="project rB">
+            <img class="project-image" src="images/sudoku_static.png" onmouseover="animateImg(this)" 
+            onmouseout="staticImg(this)">
+            <script>
+             function staticImg(e) {
+                    e.src = "images/sudoku_static.png";
+                    e.style.opacity = "0.75";
+             }
+             function animateImg(e) {
+                    e.src = "images/sudoku_test.gif";
+                    e.style.opacity = "1";
+                }
+            </script>
+
+            <p class="project-description"><strong>SudokuBot</strong> | Java</br></br>
+            A robot arm that reads and writes
+            solutions to sudoku puzzles using a simple character based OCR on 
+            Raspberry Pi.</br></br>I'm currently writing a faster, more
+            compact version on my <a class="fancy-link" 
+            href="https://github.com/Calvin445/sudoku-bot-2.0">Github</a>.</p> 
+        </div>
     </div>
 
 </div>
