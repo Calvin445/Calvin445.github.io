@@ -177,6 +177,13 @@ h3 {
     opacity: 0.75;
 }
 
+.project-image-animated {
+    width: 60%;
+    height: 60%;
+    transition: 0.3s ease;
+    opacity: 1;
+}
+
 .project-description {
     width: 40%;
     

@@ -5,175 +5,33 @@
     <title>Calvin Cai</title>
     <link href="styles.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet">
-
-    
 </head>
-
 <body>
-
-<!--
-
-Reveal
-https://github.com/jlmakes/scrollreveal
-
--->
-
-<div class="intro-container">
-    <div class="intro">
-        <div class="title">
-            <h1 class="heading rB">Howdy! I'm <strong>Calvin Cai</strong>.</h1>
-             
-            <h2 class="subtext rB"> 
-                Second-year student studying computer science and mathematics at 
-                <a class="fancy-link" href="https://www.ccis.northeastern.edu/">Northeastern University</a>. 
-                Alto Saxophonist with the <a class="fancy-link" href="https://camd.northeastern.edu/music/making-music/ensembles/wind/">
-                NEU Wind Ensemble</a>. Rock climber, weightlifter.<br> 
-            </h2>
-
-            <h2 class="subtext cowboy rB"><a class="fancy-link cowboy">Bona-fide computer cowboy</a>.</h2>
-            <p class="emoji">🎷</p>
-            <p class="emoji">💻</p>
-            <p class="emoji">👨‍💻</p>
-            <p class="emoji">🏋️‍♂️</p>
-            <p class="emoji">☕</p>
-            <p class="emoji">👨‍🎓</p>
-            <p class="emoji">✍️</p>
-            <p class="emoji">🧗</p>
-        </div>
-
-        <!--contact info menu, round buttons, gmail, github, linkedin, instagram-->
-        <ul class="icon-bar rR">
-            <li><a href="mailto:cai.ca@husky.neu.edu">
-                    <img class="icon" src="images/gmail.png"></a>
-                    <h6 class="hiddenmsg">Shoot me an email</h6></li>
-            <li><a href="https://www.linkedin.com/in/calvin-cai-458a54155/">
-                    <img class="icon" src="images/linkedin.png"></a>
-                    <h6 class="hiddenmsg">Visit my LinkedIn</h6></li>
-            <li><a href="https://github.com/Calvin445">
-                    <img class="icon" src="images/github.png"></a>
-                    <h6 class="hiddenmsg">Check out my Github</h6></li>
-            <li><a href="https://www.instagram.com/calvi4455/?hl=en">
-                    <img class="icon" src="images/instagram.png"></a>
-                    <h6 class="hiddenmsg">Follow my Instagram</h6></li>
-        </ul> 
+    <div id="intro"></div>
+    <span class="fade"></span>
+    
+    <div class="content">
+        <div id="background"></div>
+        <div id="education"></div>
+        <div id="skills"></div>
+        <div id="projects"></div>
     </div>
-</div>
+</body>
 
-<span class="fade"></span>
-
-<div class="content">
-    <div class="section background">
-        <h3 class="rR">BACKGROUND</h3>
-        <p class="rB">
-            As a student, I love learning because it allows me the
-            to interact with the world in a meaningful way, whether that's
-            through building <a class="fancy-link" href="#projects">cool
-            stuff</a> or analyzing the ethical concerns of new technologies.
-            </br></br>
-            I'm also a passionate problem solver that thrives in challenging work environments.
-            I chose computer science, so I could tackle tough problems and make an impact
-            on the world.
-            </br></br>
-            If I'm not coding, I'm probably rocking out on the saxophone, 
-            working out at the gym, rock climbing, or listening to 
-            <a href="https://open.spotify.com/user/1220252461?si=huYA2NJFTpiB_CuiVUSyTw"
-               class="fancy-link">music</a>. 
-        </p>
-
-    </div>
-
-    <div class="section" id="coursework">
-        <h3 class="rR">EDUCATION</h3>
-        <p class="rB">
-            <strong>Northeastern University</strong>, Boston MA </br>
-            Candidate for a BS in Computer Science and Mathematics
-        <div class="table">
-            <p class="rB tableHead">Courses:</p>
-            <p class="rB tableContents">Object Oriented Design | Algorithms and Data | Computer Systems |
-            Data Collection, Integration and Analysis | Discrete Structures |
-            Logic and Computation | Discrete Structures | Linear Algebra |
-            Calculus 3
-        </div>
-        
-        <div class="table">
-            <p class="rB tableHead">GPA:</p>
-            <p class="rB tableContents">3.94 / 4.00</p>
-        </div>
- 
-        <div class="table">
-            <p class="rB tableHead">Honors:</p>
-            <p class="rB tableContents">Dean's List, Honors Program</p>
-        </div>
-        </p>
-
-
-        <p class="rB">
-            <strong>Montgomery High School</strong>, Skillman NJ </br>
-        <div class="table">
-            <p class="rB tableHead">Honors:</p>
-            <p class="rB tableContents">AP Scholar | National Honors Society |
-            Graduate top 10% of class </p>
-        </div>
-        
-        </p>
-    </div>
-
-
-    <div class="section" id="skills">
-        <h3 class="rR">SKILLS</h3> 
-        <div class="table">
-            <p class="rB tableHead">Languages:</p>
-            <p class="rB tableContents">Proficient in Java | Racket </br> 
-            Familiar with C | R | HTML | CSS | Javascript | Python | Swift</p>
-        </div>
-   
-        <div class="table">
-            <p class="rB tableHead">Software:</p>
-            <p class="rB tableContents">Intellij IDEA | Eclipse | bash | git |
-            RStudio | WebStorm | Autodesk Fusion 360</p>
-        </div>
-    </div>
-
-    <div class="section" id="projects">
-        <h3 class="rR">PROJECTS</h3>
-        <div class="project rB">
-            <img class="project-image" src="images/sudoku_static.png" onmouseover="animateImg(this)" 
-            onmouseout="staticImg(this)">
-            <script>
-             function staticImg(e) {
-                    e.src = "images/sudoku_static.png";
-                    e.style.opacity = "0.75";
-             }
-             function animateImg(e) {
-                    e.src = "images/sudoku_test.gif";
-                    e.style.opacity = "1";
-                }
-            </script>
-
-            <p class="project-description"><strong>SudokuBot</strong> | Java</br></br>
-            A robot arm that reads and writes
-            solutions to sudoku puzzles using a simple character based OCR on 
-            Raspberry Pi.</br></br>I'm currently writing a faster, more
-            compact version on my <a class="fancy-link" 
-            href="https://github.com/Calvin445/sudoku-bot-2.0">Github</a>.</p> 
-        </div>
-    </div>
-
-</div>
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="src/intro.js"></script>
+<script src="src/background.js"></script>
+<script src="src/education.js"></script>
+<script src="src/skills.js"></script>
+<script src="src/projects.js"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
 <script>
-
     // Changing the defaults
     window.sr = ScrollReveal({duration: 400, distance: '20px', scale:0.90, reset:true });
 
     // Customizing a reveal set
     sr.reveal('.rB');
     sr.reveal('.rR', { origin: 'right'});
-
 
     var emojis = document.querySelectorAll(".emoji");
     var emoji;
@@ -206,9 +64,3 @@ https://github.com/jlmakes/scrollreveal
     }
 
 </script>
-
-</body>
-
-
-
-</html>
