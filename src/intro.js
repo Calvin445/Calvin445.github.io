@@ -12,9 +12,10 @@ const intro = new Vue({
                 <div class="title">
                     <h1 class="heading rB">{{ this.someHello() }}! I'm <strong>Calvin Cai</strong>.</h1>
                     <h2 class="subtext rB"> 
-                        Third-year student studying computer science and mathematics at <a class="fancy-link" href="https://www.ccis.northeastern.edu/">Northeastern University</a>. 
-                        Alto Saxophonist with the <a class="fancy-link" href="https://camd.northeastern.edu/music/making-music/ensembles/wind/">
-                        NEU Wind Ensemble</a>. Rock climber, weightlifter.<br> 
+                        Software engineer at <a class="fancy-link" href="https://www.cisco.com/c/en/us/products/security/defense-orchestrator/index.html"> Cisco Defense Orchestrator</a>.
+                        Third-year computer science and mathematics student at <a class="fancy-link" href="https://www.ccis.northeastern.edu/">Northeastern University</a>. 
+                        Alto Saxophonist with the <a class="fancy-link" href="https://camd.northeastern.edu/music/making-music/ensembles/wind/">Northeastern Wind Ensemble</a>.  
+                        Rock climber, weightlifter.<br> 
                     </h2>
                     <h2 class="subtext cowboy rB"><a class="fancy-link cowboy">Bona-fide computer cowboy</a>.</h2>
                     <p class="emoji">🎷</p>
