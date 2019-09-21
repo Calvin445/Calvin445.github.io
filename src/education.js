@@ -6,7 +6,7 @@ const edu = new Vue({
         <p class="rB">
         <strong>Northeastern University</strong>, Boston MA </br> Candidate for a BS in Computer Science and Mathematics
         <div class="table">
-            <p class="rB tableHead">Courses I really enjoyed:</p>
+            <p class="rB tableHead">Courses:</p>
             <p class="rB tableContents">
                 Object Oriented Design | Algorithms and Data | Computer Systems |
                 Data Collection, Integration and Analysis | Discrete Structures | Linear Algebra | Calculus 3
