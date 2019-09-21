@@ -32,4 +32,35 @@
     // Customizing a reveal set
     sr.reveal('.rB');
     sr.reveal('.rR', { origin: 'right'});
+
+    var emojis = document.querySelectorAll(".emoji");
+    var emoji;
+    for(var i = 0; i < emojis.length; i++) {
+        emoji = emojis[i];
+        moveElem(emoji, 2 * Math.random() * Math.PI, random(5) + 25, random(5) +
+        20, (random(10) + 30)/125000);
+    }
+
+    function random(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    function moveElem(element, ti, cx, cy, dt) {
+        var elem = element;
+        var bottom;
+        var left;
+        var theta = ti;
+        var id = setInterval(frame, 5);
+        function frame() {
+            bottom = (cy * Math.sin(3*theta)) + 50;
+            left = (cx * Math.cos(theta)) + 45;
+            elem.style.bottom = bottom+ '%';
+            elem.style.left = left + '%';
+            theta += dt;
+            if (theta > 2 * Math.PI) {
+                theta = 0;
+            }
+        }
+    }
+
 </script>

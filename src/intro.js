@@ -5,7 +5,6 @@ const intro = new Vue({
             const hellos = ['Hello', 'Hi', 'Howdy', 'Hey', 'Hiya'];
             return hellos[Math.floor(Math.random() * (hellos.length))];
         },
-
     },
     template: 
         `<div class="intro-container">
@@ -18,16 +17,14 @@ const intro = new Vue({
                         NEU Wind Ensemble</a>. Rock climber, weightlifter.<br> 
                     </h2>
                     <h2 class="subtext cowboy rB"><a class="fancy-link cowboy">Bona-fide computer cowboy</a>.</h2>
-                    <div>
-                        <p class="emoji">🎷</p>
-                        <p class="emoji">💻</p>
-                        <p class="emoji">👨‍💻</p>
-                        <p class="emoji">🏋️‍♂️</p>
-                        <p class="emoji">☕</p>
-                        <p class="emoji">👨‍🎓</p>
-                        <p class="emoji">✍️</p>
-                        <p class="emoji">🧗</p>
-                    </div>
+                    <p class="emoji">🎷</p>
+                    <p class="emoji">💻</p>
+                    <p class="emoji">👨‍💻</p>
+                    <p class="emoji">🏋️‍♂️</p>
+                    <p class="emoji">☕</p>
+                    <p class="emoji">👨‍🎓</p>
+                    <p class="emoji">✍️</p>
+                    <p class="emoji">🧗</p>
                 </div>
                 
                 <ul class="icon-bar rR">
